@@ -1,0 +1,31 @@
+<div>
+    <div class="row justify-content-center">
+        <div class="col-12 col-sm-6">
+            <h1 class = "head text-center" style = "margin-top: 160px;"> Employee Table </h1>
+            <table class = "table table-striped"> 
+               <thead>
+                   <tr>
+                       <th> Emp No </th>
+                       <th> First Name </th>
+                       <th> Last Name </th>
+                       <th> Phone Number </th>
+                       <th> Email ID </th>
+                       <th> Address </th>
+                       <th> State </th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr *ngFor = "let employee of employees;let i = index">
+                       <td> {{i+1}} </td>
+                       <td> {{employee.firstName}} </td>
+                       <td> {{employee.lastName}} </td>
+                       <td> {{employee.phnNo}} </td>
+                       <td> {{employee.email}} </td>
+                       <td> {{employee.address}} </td>
+                       <td> {{employee.state}} </td>
+                   </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+</div>
