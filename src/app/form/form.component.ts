@@ -45,7 +45,7 @@ export class FormComponent implements OnInit {
   selectedCountry: String = "--Choose Country--";
 
   Countries: Array<any> = [
-		{ name: 'Germany', states:  ['Saxony', 'Berlin']},
+		{ name: 'Germany', states:  [{name :'Saxony'}, {name :'Berlin'}]},
 		{ name: 'Spain', states:  [{name: 'Palencia'} , {name : 'Avila'}] },
 		{ name: 'USA', states: [{name: 'Texas'},{name : 'California'}] },
 		{ name: 'Mexico', states:  [{name: 'Colima'} ,{name : 'Tabasco'}]},
